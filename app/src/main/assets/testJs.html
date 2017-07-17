@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0160)file:///Users/haokanme/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/ProductDoc/02-HtmlDesgin/nanyibang/index.html -->
+<html lang="zh">
+<head>
+    cccccccccccccc
+    <link rel="shortcut icon" type="image/x-icon" href="./img/search-logo.ico" media="screen" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>男衣邦-男人的穿衣助手</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+    <button type="button" id="showPicker" onclick="showPicker();">显示picker</button>
+
+</body>
+
+<script type="text/javascript">
+    function showPicker(){
+        var data = new Object();
+        data.title = "标题"
+        window.HKWidget.picker(data, function(res){
+            alert("title : " + res.title + ", status: " + res.status);
+        }, function(err){
+            alert("title : " + err.title + ", status: " + err.status);
+        });
+    }
+</script>
+</html>
